@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fonte OUTFIT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    
+    <title>Formulário</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <section>
+            <div class="header"></div>
+        </section>
+        <div class="form-container">
+            <div class="form-header">
+                <p>Ice Cream</p>
+            </div>
+            <div class="form-body">
+                <h1 class="form-title">Monte sua sorveteria!</h1>
+                <p>Descreva os detalhes da sua loja e cardápio dos sonhos:</p>
+                <form>
+                    <div class="box-input">
+                        <label for="title">Nome da sorveteria <span class="required-field">*</span></label>
+                        <input type="text" name="title" id="title" class="block" placeholder="Exemplo: Ice Cream Wonderland" minlength="1" maxlength="30" required>
+                    </div>
+                    <div class="box-input">
+                        <label for="price">Preço <span class="required-field">*</span></label>
+                        <input type="number" name="price" id="price" class="block" placeholder="Defina o preço médio dos produtos" required>
+                    </div>
+                    <div class="box-input">
+                        <label for="dif">Diferencial <span class="required-field">*</span></label>
+                        <textarea name="dif" id="dif" class="block" placeholder="Aqui você coloca as propostas e o diferencial da sua marca"></textarea>
+                    </div>
+                    <div class="box-input">
+                        <label for="loc">Localização <span class="required-field">*</span></label>
+                        <input type="text" name="loc" id="loc" class="block" placeholder="Digite qual seria o endereço ideal para loja" required>
+                    </div>
+                    <div class="box-input">
+                        <label for="creation_date">Data de criação da loja <span class="required-field">*</span></label>
+                        <input type="date" name="creation_date" id="creation_date" class="block" required>
+                    </div>
+                    <div class="box-input">
+                        <p>Ela terá atendimento presencial ou delivery? <span class="required-field">*</span></p>
+                        <input type="radio" name="service" id="inperson">
+                        <label for="inperson" id="inperson-label">Presencial</label>
+                        <input type="radio" name="service" id="delivery">
+                        <label for="delivery" id="delivery-label">Delivery</label>
+                        <input type="radio" name="service" id="in-dev">
+                        <label for="in-dev">Terá os dois</label>
+                    </div>
+                    <div class="flavours-box">
+                        <p>Sabores que não poderão faltar no cardápio:</p>
+                        <ul class="flavours-list">
+                            <li>
+                                <input type="checkbox" name="flavours[]" id="chocolate" value="chocolate">
+                                <label for="chocolate">Chocolate</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="flavours[]" id="strawberry" value="strawberry">
+                                <label for="strawberry">Morango</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="flavours[]" id="pistachio" value="pistachio">
+                                <label for="pistachio">Pistache</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="flavours[]" id="redvelvet" value="redvelvet">
+                                <label for="redvelvet">Red Velvet</label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="flavours-box">
+                        <ul class="flavours-list">
+                            <li>
+                                <input type="checkbox" name="flavours[]" id="cookiesncream" value="cookiesncream">
+                                <label for="cookiesncream">Cookies n' Cream</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="flavours[]" id="coco" value="coco">
+                                <label for="coco">Côco</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="flavours[]" id="tapioca" value="tapioca">
+                                <label for="tapioca">Tapioca</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="flavours[]" id="acai" value="acai">
+                                <label for="acai">Açaí</label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="box-input">
+                        <p>Fotos que servem de inspiração para a sua loja: <span class="required-field">*</span></p>
+                        <input type="file" name="images" id="images" multiple accept="image/png, image/jpg" required>
+                    </div>
+                    <input type="submit" value="Enviar" class="btn-submit">
+                    <input type="reset" value="Reiniciar" class="btn-reset">
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
