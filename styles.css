@@ -215,7 +215,7 @@ input:focus, textarea:focus, input[type="radio"]:focus {
     }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 480px) {
     * {
         padding: 0;
         margin: 0;
@@ -241,13 +241,13 @@ input:focus, textarea:focus, input[type="radio"]:focus {
     }
     
     .btn-submit, .btn-reset {
-        max-width: 40%;
+        max-width: 35%;
         height: 50px;
         font-size: 14px;
     }
 
     .btn-reset{
         position: relative;
-        left: 50px;
+        left: 70px;
     }
 }
